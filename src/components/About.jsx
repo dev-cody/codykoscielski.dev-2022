@@ -9,7 +9,7 @@ const About = () => {
         github: 'https://github.com/dev-cody'
     }
     return (
-    <div className='bg-white'>
+    <div className='bg-white' id='about'>
         <div className="max-w-[800px] w-full mx-auto flex flex-col justify-start p-3 leading-tight">
             <div className='bg-red w-[220px] h-[40px] ml-10 my-[40px]'>
                 <h2 className='text-xl font-bold ml-[-30px] text-dark'>about.</h2>
@@ -33,7 +33,7 @@ const About = () => {
                     </div>
                     <p className='font-bold text-md'>Github</p>
                 </a>
-                </div>
+            </div>
         </div>
     </div>
     )
