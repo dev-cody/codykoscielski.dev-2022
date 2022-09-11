@@ -30,7 +30,7 @@ const Navbar = () => {
             <li className='p-4 border-b border-gray-600 text-white text-md'>Company</li>
             <li className='p-4 border-b border-gray-600 text-white text-md'>Resources</li>
             <li className='p-4 border-b border-gray-600 text-white text-md'>About</li>
-            <li className='p-4 text-white'>Contact</li>
+            <li className='p-4 text-white text-md'>Contact</li>
         </ul>
     </nav>
     )
