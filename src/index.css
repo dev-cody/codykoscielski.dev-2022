@@ -22,3 +22,30 @@ body {
   border-right: 15px solid transparent;
   border-top: 15px solid #E76F51;
 }
+
+.triangle-yellow {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #E9C46A;
+}
+
+.anchor {
+  scroll-margin-top: calc(96px + 2.5em);
+}
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.content-div:hover {
+  background-image: linear-gradient(
+      to right,
+      rgba(112, 157, 255, 0.8),
+      hsla(242, 74%, 61%, 0.8)   
+  )!important;
+}

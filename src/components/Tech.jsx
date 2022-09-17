@@ -49,7 +49,7 @@ const Tech = () => {
                 </div>
               </div>
             </div>
-            <p className='text-md'>i am always keeping up and trying to learn some of the more up to date technologies<span className='text-red'>.</span></p>
+            <p className='text-md'>i'm always keeping up with and trying to learn some of the more up to date technologies<span className='text-red'>.</span> as a <span className='font-bold text-red'>developer</span>, i am always trying to improve my skills and build <span className='font-bold'>awesome</span> websites and web app<span className='text-red'>.</span></p>
         </div>
     </section>
   )
