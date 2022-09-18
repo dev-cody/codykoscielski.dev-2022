@@ -1,15 +1,28 @@
 import { React, useState } from 'react'
+import { db } from '../firebase'
+import { collection, addDoc } from 'firebase/firestore'
+
 const FORM_ENDPOINT = "";
+
 
 const Contact = () => {
 
   const [formSubmitted, setFormSubmitted] = useState(false)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
+  const newEmail = collection(db, 'emails')
+  
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    addDoc(newEmail, {name: name, email: email, message: message})
     setTimeout(() => {
       setFormSubmitted(true)
     }, 100)
+
+    
   }
 
   if (formSubmitted) {
@@ -45,6 +58,9 @@ const Contact = () => {
               name="name"
               className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-dark rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
               required
+              onChange={(e) => {
+                setName(e.target.value)
+              }}
             />
           </div>
           <div className="mb-3 pt-0">
@@ -54,6 +70,9 @@ const Contact = () => {
               name="email"
               className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-dark rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
               required
+              onChange={(e) => {
+                setEmail(e.target.value)
+              }}
             />
           </div>
           <div className="mb-3 pt-0">
@@ -62,6 +81,9 @@ const Contact = () => {
               name="message"
               className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-dark rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
               required
+              onChange={(e) => {
+                setMessage(e.target.value)
+              }}
             />
           </div>
           <div className="mb-3 pt-0">
