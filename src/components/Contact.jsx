@@ -17,20 +17,8 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    addDoc(newEmail, {name: name, email: email, message: message})
-    setTimeout(() => {
-      setFormSubmitted(true)
-    }, 100)
-
-    
-  }
-
-  if (formSubmitted) {
-    return(
-      <div className="">
-        <h2>awesome, i look forward to chatting</h2>
-      </div>
-    )
+    addDoc(newEmail, {name: name, email: email, message: message})    
+    setFormSubmitted(true)
   }
 
   return (
@@ -44,6 +32,11 @@ const Contact = () => {
         </div>
         <p className='text-md mt-3'>have a question, looking to hire, or need a website build?</p>
         <h2 className='text-40'>send me an email, let's make it happen!</h2>
+        { formSubmitted ? 
+        <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mt-4 mb-10 text-center">
+          <h2 className='text-40 text-dark'>thanks for reaching out</h2>
+          <p className='text-md text-dark'>i look forward to building your ideas</p>
+        </div> : 
       <form
         className="bg-white shadow-md rounded px-8 pt-6 pb-8 mt-4 mb-10"
         action={FORM_ENDPOINT}
@@ -94,7 +87,7 @@ const Contact = () => {
               send
             </button>
           </div>
-        </form>
+        </form> }
       </div>
     </section>
   )

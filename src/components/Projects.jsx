@@ -13,15 +13,15 @@ const Projects = () => {
           </div>
           <p className='text-md text-center mt-3'>i appreciate you making it this far.<span className='text-red'>.</span>.</p>
           <h2 className='text-40'>here are <span className='font-bold'>some</span> great <span className='font-bold'>sites</span> that i have built<span className='text-red'>.</span></h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
             <div
               style={{ backgroundImage: `url(${FlashPainters})` }}
               className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
             >
               {/* Hover Effects */}
-              <div className='opacity-0 group-hover:opacity-100'>
+              <div className='opacity-0 group-hover:opacity-100 text-center'>
                 <span className='text-sm font-bold text-white tracking-wider'>
-                  React JS Application
+                  react.js and firebae application
                 </span>
                 <div className='pt-8 text-center'>
                   <a href='/'>
