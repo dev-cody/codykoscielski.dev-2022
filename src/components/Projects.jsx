@@ -2,6 +2,7 @@ import React from 'react'
 import FlashPainters from '../assets/flash-painters.png'
 
 const Projects = () => {
+
   return (
     <section id='projects' className='bg-white'>
       <div className="ml-10 md:ml-[400px] triangle-yellow"></div>
@@ -24,14 +25,14 @@ const Projects = () => {
                   react.js and firebae application
                 </span>
                 <div className='pt-8 text-center'>
-                  <a href='/'>
+                  <a href='https://github.com/dev-cody/flash-painters-react' target="_blank" rel="noreferrer">
                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-md'>
-                      Demo
+                      github
                     </button>
                   </a>
                   <a href='/'>
                     <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-md'>
-                      Code
+                      demo coming soon
                     </button>
                   </a>
                 </div>
