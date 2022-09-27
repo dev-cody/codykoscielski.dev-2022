@@ -19,8 +19,8 @@ const Navbar = () => {
                 <a href="#home"><li className='p-4 text-white text-md'>home</li></a>
                 <a href="#about"><li className='p-4 text-white text-md'>about</li></a>
                 <a href='#tech'><li className='p-4 text-white text-md'>tech</li></a>
-                <li className='p-4 text-white text-md'>projects</li>
-                <li className='p-4 text-white text-md'>lets chat</li>
+                <a href='#projects'><li className='p-4 text-white text-md'>projects</li></a>
+                <a href='#contact'><li className='p-4 text-white text-md'>lets chat</li></a>
             </ul>
             <div onClick={handleNav} className='block md:hidden'>
                 {nav ? <AiOutlineClose size={40} color="#E76F51"/> : <AiOutlineMenu size={40} color="#E76F51"/>}
@@ -30,8 +30,8 @@ const Navbar = () => {
                 <a href="#home"><li className='p-4 border-b border-gray-600 text-white text-md'>home</li></a>
                 <a href="#about"><li className='p-4 border-b border-gray-600 text-white text-md'>about</li></a>
                 <a href='#tech'><li className='p-4 border-b border-gray-600 text-white text-md'>tech</li></a>
-                <li className='p-4 border-b border-gray-600 text-white text-md'>projects</li>
-                <li className='p-4 text-white text-md'>lets chat</li>
+                <a href='#projects'><li className='p-4 border-b border-gray-600 text-white text-md'>projects</li></a>
+                <a href='#contact'><li className='p-4 text-white text-md'>lets chat</li></a>
             </ul>
         </div>
     </nav>

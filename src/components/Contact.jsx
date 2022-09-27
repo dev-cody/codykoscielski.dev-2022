@@ -40,7 +40,7 @@ const Contact = () => {
   }
 
   return (
-    <section id='tech' className='text-white'>
+    <section id='contact' className='text-white'>
     <div className="contact-triangle"></div>
     <div className="max-w-[800px] w-full mx-auto flex flex-col justify-start p-3 leading-tight">
       <div className='w-full flex flex-start'>
